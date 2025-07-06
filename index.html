@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora OSRS XP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Asistente de Powerleveling OSRS</h1>
+
+    <label for="skill">Skill:</label>
+    <select id="skill">
+      <option value="Agility">Agility</option>
+      <option value="Attack">Attack</option>
+      <option value="Construction">Construction</option>
+      <option value="Cooking">Cooking</option>
+      <option value="Crafting">Crafting</option>
+      <option value="Defence">Defence</option>
+      <option value="Firemaking">Firemaking</option>
+      <option value="Fishing">Fishing</option>
+      <option value="Fletching">Fletching</option>
+      <option value="Herblore">Herblore</option>
+      <option value="Hitpoints">Hitpoints</option>
+      <option value="Hunter">Hunter</option>
+      <option value="Magic">Magic</option>
+      <option value="Mining">Mining</option>
+      <option value="Prayer">Prayer</option>
+      <option value="Ranged">Ranged</option>
+      <option value="Runecrafting">Runecrafting</option>
+      <option value="Slayer">Slayer</option>
+      <option value="Smithing">Smithing</option>
+      <option value="Strength">Strength</option>
+      <option value="Thieving">Thieving</option>
+      <option value="Woodcutting">Woodcutting</option>
+    </select>
+
+    <label for="nivelActual">Nivel actual:</label>
+    <input type="number" id="nivelActual" min="1" max="99" value="1" />
+
+    <label for="nivelObjetivo">Nivel objetivo:</label>
+    <input type="number" id="nivelObjetivo" min="1" max="99" value="99" />
+
+    <label><input type="checkbox" id="ironman" /> Modo Ironman</label>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
