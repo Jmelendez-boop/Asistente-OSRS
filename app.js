@@ -1,4 +1,3 @@
-// Tabla oficial de XP por nivel 1–99
 const xpPorNivel = [
   0, 83, 174, 276, 388, 512, 650, 801, 969, 1154,
   1358, 1584, 1833, 2107, 2411, 2746, 3115, 3523, 3973, 4470,
@@ -56,7 +55,11 @@ function calcular() {
         <h3>${metodo.nombre}</h3>
         <p><strong>XP/hora:</strong> ${metodo.xpHora.toLocaleString()} xp</p>
         <p><strong>ETA:</strong> ${horas.toFixed(1)} horas (${dias.toFixed(1)} días)</p>
-        <p><strong>Precio estimado:</strong> ${precio.toLocaleString()} gp</p>
+        ${
+          precio > 0
+            ? `<p><strong>Precio estimado:</strong> ${precio.toLocaleString()} gp</p>`
+            : `<p><strong>Precio estimado:</strong> Gratis</p>`
+        }
       </div>
       <hr/>
     `;

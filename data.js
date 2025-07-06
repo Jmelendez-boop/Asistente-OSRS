@@ -1,5 +1,4 @@
 const metodosPorSkill = {
-  const metodosPorSkill = {
   Agility: [
     {
       nombre: "Gnome Stronghold (1–10)",
@@ -84,8 +83,7 @@ const metodosPorSkill = {
       ironman: false
     }
   ],
-
-    Mining: [
+  Mining: [
     {
       nombre: "Copper/Tin (1–15)",
       minNivel: 1,
@@ -763,51 +761,7 @@ const metodosPorSkill = {
       ironman: true
     }
   ]
-};
+}; // <- Cierra metodosPorSkill
 
-    {
-      nombre: "Ganancia pasiva (cualquier método de combate)",
-      minNivel: 1,
-      maxNivel: 99,
-      xpHora: 25000,
-      gpHora: 0,
-      ironman: true
-    }
-  ],
-  Woodcutting: [
-    {
-      nombre: "Regular Trees (1–15)",
-      minNivel: 1,
-      maxNivel: 15,
-      xpHora: 8000,
-      gpHora: 0,
-      ironman: true
-    },
-    {
-      nombre: "Oak Trees (15–60)",
-      minNivel: 15,}; 
-      maxNivel: 60,
-      xpHora: 35000,
-      gpHora: 0,
-      ironman: true
-    },
-    {
-      nombre: "Willows (30–90)",
-      minNivel: 30,
-      maxNivel: 90,
-      xpHora: 45000,
-      gpHora: 0,
-      ironman: true
-    },
-    {
-      nombre: "Teaks (90–99)",
-      minNivel: 90,
-      maxNivel: 99,
-      xpHora: 60000,
-      gpHora: 0,
-      ironman: false
-    }
-  ]
-};}; // <- Cierra metodosPorSkill
 
 
